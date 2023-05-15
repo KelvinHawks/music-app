@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2f30c22c4d.js" crossorigin="anonymous"></script>
+    <title>Music player</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="content">
+            <div class="music-name">
+                <h3>Despacito</h3>
+                <p>Luis fonsi ft rican</p>
+            </div>
+           <audio id="song">
+                <source src="Beyoncé - Halo.mp3" type="audio/mpeg">
+           </audio>
+           <input type="range" value="0" id="progress">
+            <div class="pause-rev-bac">
+                <i class="fa-solid fa-backward"></i>
+                <i onclick="playPause()" class="fa-solid fa-play click"></i>
+                <i class="fa-solid fa-forward"></i>
+
+            </div>
+        </div>
+       
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
